@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace ResaurantReservationSYS
 {
-    public partial class frmMainMenu : Form
+    public partial class frmUpdateTable : Form
     {
-        public frmMainMenu()
+        public frmUpdateTable()
         {
             InitializeComponent();
-        }
-
-        private void registerCustomerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmCreateAccount CreateAccount = new frmCreateAccount();
-            this.Hide();
-            CreateAccount.Show();
-
-
         }
     }
 }
