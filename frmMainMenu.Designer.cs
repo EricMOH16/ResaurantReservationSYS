@@ -87,12 +87,14 @@ namespace ResaurantReservationSYS
             this.updateCustomersToolStripMenuItem.Name = "updateCustomersToolStripMenuItem";
             this.updateCustomersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.updateCustomersToolStripMenuItem.Text = "Update Account";
+            this.updateCustomersToolStripMenuItem.Click += new System.EventHandler(this.updateCustomersToolStripMenuItem_Click);
             // 
             // cancelRegistraionToolStripMenuItem
             // 
             this.cancelRegistraionToolStripMenuItem.Name = "cancelRegistraionToolStripMenuItem";
             this.cancelRegistraionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cancelRegistraionToolStripMenuItem.Text = "Dlete Acccount";
+            this.cancelRegistraionToolStripMenuItem.Click += new System.EventHandler(this.cancelRegistraionToolStripMenuItem_Click);
             // 
             // mnuItemReservation
             // 

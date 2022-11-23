@@ -16,5 +16,12 @@ namespace ResaurantReservationSYS
         {
             InitializeComponent();
         }
+
+        private void btnAddRoom_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Table has been updated", "Success", MessageBoxButtons.OK);
+            
+            
+        }
     }
 }

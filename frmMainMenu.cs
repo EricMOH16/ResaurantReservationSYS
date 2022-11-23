@@ -25,5 +25,21 @@ namespace ResaurantReservationSYS
 
 
         }
+
+        private void updateCustomersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmUpdateAccount UpdateAccount = new frmUpdateAccount();
+            this.Hide();
+            UpdateAccount.Show();
+
+        }
+
+        private void cancelRegistraionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDeleteAccount DeleteAccount = new frmDeleteAccount();
+            this.Hide();
+            DeleteAccount.Show();
+
+        }
     }
 }

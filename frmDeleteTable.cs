@@ -16,5 +16,10 @@ namespace ResaurantReservationSYS
         {
             InitializeComponent();
         }
+
+        private void cboBoxNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

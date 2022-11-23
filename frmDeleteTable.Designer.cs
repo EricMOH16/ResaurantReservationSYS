@@ -54,6 +54,7 @@ namespace ResaurantReservationSYS
             this.cboBoxNumber.Name = "cboBoxNumber";
             this.cboBoxNumber.Size = new System.Drawing.Size(100, 21);
             this.cboBoxNumber.TabIndex = 22;
+            this.cboBoxNumber.TextChanged += new System.EventHandler(this.cboBoxNumber_TextChanged);
             // 
             // btnDeleteTable
             // 

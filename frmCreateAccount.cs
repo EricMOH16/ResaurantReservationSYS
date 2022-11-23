@@ -35,13 +35,20 @@ namespace ResaurantReservationSYS
         private void btnRegister_Click(object sender, EventArgs e)
         {
             //Validation
-            if(txtFirstName.Text.Equals ("") || txtPhoneNumber.Text.Equals("") || txtSurname.Text.Equals("") || txtEmail.Text.Equals(""))
+            if(txtFirstName.Text.Equals (""))
+            {
+                MessageBox.Show("First Name must be entered", "Invalid Input", MessageBoxButtons.OK);
+                txtFirstName.Focus();
+                return;
+            }
+
+            if (txtFirstName.Text.Equals("") || txtPhoneNumber.Text.Equals("") || txtSurname.Text.Equals("") || txtEmail.Text.Equals(""))
             {
                 MessageBox.Show("All fields must be entered", "Invalid Input", MessageBoxButtons.OK);
                 txtFirstName.Focus();
                 return;
             }
-            
+
 
             MessageBox.Show("Customer Registered", "Success", MessageBoxButtons.OK);
 

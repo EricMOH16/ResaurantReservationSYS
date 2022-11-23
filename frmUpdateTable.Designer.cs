@@ -61,6 +61,7 @@ namespace ResaurantReservationSYS
             this.btnAddRoom.TabIndex = 10;
             this.btnAddRoom.Text = "Update Table";
             this.btnAddRoom.UseVisualStyleBackColor = true;
+            this.btnAddRoom.Click += new System.EventHandler(this.btnAddRoom_Click);
             // 
             // lblLocation
             // 

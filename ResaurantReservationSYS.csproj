@@ -64,6 +64,12 @@
     <Compile Include="frmDeleteTable.Designer.cs">
       <DependentUpon>frmDeleteTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMakeRes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMakeRes.Designer.cs">
+      <DependentUpon>frmMakeRes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUpdateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDeleteTable.resx">
       <DependentUpon>frmDeleteTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMakeRes.resx">
+      <DependentUpon>frmMakeRes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateAccount.resx">
       <DependentUpon>frmUpdateAccount.cs</DependentUpon>
