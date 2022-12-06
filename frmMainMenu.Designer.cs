@@ -119,6 +119,7 @@ namespace ResaurantReservationSYS
             this.cancelReseravtionToolStripMenuItem.Name = "cancelReseravtionToolStripMenuItem";
             this.cancelReseravtionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cancelReseravtionToolStripMenuItem.Text = "Cancel Reseravtion";
+            this.cancelReseravtionToolStripMenuItem.Click += new System.EventHandler(this.cancelReseravtionToolStripMenuItem_Click);
             // 
             // recordArrivalToolStripMenuItem
             // 

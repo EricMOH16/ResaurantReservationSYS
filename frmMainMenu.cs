@@ -69,5 +69,13 @@ namespace ResaurantReservationSYS
             this.Hide();
             deleteTable.Show();
         }
+
+        private void cancelReseravtionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCancelRes cancelRes = new frmCancelRes();
+            this.Hide();
+            cancelRes.Show();
+
+        }
     }
 }
