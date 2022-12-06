@@ -16,7 +16,7 @@ namespace ResaurantReservationSYS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMakeReservation());
+            Application.Run(new frmMainMenu());
         }
     }
 }

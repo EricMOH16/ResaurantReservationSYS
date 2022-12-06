@@ -110,25 +110,26 @@ namespace ResaurantReservationSYS
             // makeReservationToolStripMenuItem
             // 
             this.makeReservationToolStripMenuItem.Name = "makeReservationToolStripMenuItem";
-            this.makeReservationToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.makeReservationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.makeReservationToolStripMenuItem.Text = "Make Reservation";
+            this.makeReservationToolStripMenuItem.Click += new System.EventHandler(this.makeReservationToolStripMenuItem_Click);
             // 
             // cancelReseravtionToolStripMenuItem
             // 
             this.cancelReseravtionToolStripMenuItem.Name = "cancelReseravtionToolStripMenuItem";
-            this.cancelReseravtionToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.cancelReseravtionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cancelReseravtionToolStripMenuItem.Text = "Cancel Reseravtion";
             // 
             // recordArrivalToolStripMenuItem
             // 
             this.recordArrivalToolStripMenuItem.Name = "recordArrivalToolStripMenuItem";
-            this.recordArrivalToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.recordArrivalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.recordArrivalToolStripMenuItem.Text = "Record Arrival";
             // 
             // recordToolStripMenuItem
             // 
             this.recordToolStripMenuItem.Name = "recordToolStripMenuItem";
-            this.recordToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.recordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.recordToolStripMenuItem.Text = "Record Bill Paid";
             // 
             // mnuItemTables
@@ -144,20 +145,23 @@ namespace ResaurantReservationSYS
             // addTableToolStripMenuItem
             // 
             this.addTableToolStripMenuItem.Name = "addTableToolStripMenuItem";
-            this.addTableToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.addTableToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addTableToolStripMenuItem.Text = "Add Table";
+            this.addTableToolStripMenuItem.Click += new System.EventHandler(this.addTableToolStripMenuItem_Click);
             // 
             // updateTableToolStripMenuItem
             // 
             this.updateTableToolStripMenuItem.Name = "updateTableToolStripMenuItem";
-            this.updateTableToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.updateTableToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.updateTableToolStripMenuItem.Text = "Update Table";
+            this.updateTableToolStripMenuItem.Click += new System.EventHandler(this.updateTableToolStripMenuItem_Click);
             // 
             // removeTableToolStripMenuItem
             // 
             this.removeTableToolStripMenuItem.Name = "removeTableToolStripMenuItem";
-            this.removeTableToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.removeTableToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.removeTableToolStripMenuItem.Text = "Remove Table";
+            this.removeTableToolStripMenuItem.Click += new System.EventHandler(this.removeTableToolStripMenuItem_Click);
             // 
             // managementToolStripMenuItem
             // 

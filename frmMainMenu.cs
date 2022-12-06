@@ -41,5 +41,33 @@ namespace ResaurantReservationSYS
             DeleteAccount.Show();
 
         }
+
+        private void makeReservationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMakeReservation makeReservation = new frmMakeReservation();
+            this.Hide();
+            makeReservation.Show();
+        }
+
+        private void addTableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddTable addTable = new frmAddTable();
+            this.Hide();
+            addTable.Show();
+        }
+
+        private void updateTableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmUpdateTable updateTable = new frmUpdateTable();
+            this.Hide();
+            updateTable.Show();
+        }
+
+        private void removeTableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDeleteTable deleteTable = new frmDeleteTable();
+            this.Hide();
+            deleteTable.Show();
+        }
     }
 }

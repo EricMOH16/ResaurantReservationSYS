@@ -52,6 +52,12 @@
     <Compile Include="frmAddTable.Designer.cs">
       <DependentUpon>frmAddTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCancelRes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelRes.Designer.cs">
+      <DependentUpon>frmCancelRes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDeleteAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,12 +69,6 @@
     </Compile>
     <Compile Include="frmDeleteTable.Designer.cs">
       <DependentUpon>frmDeleteTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMakeRes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMakeRes.Designer.cs">
-      <DependentUpon>frmMakeRes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMakeReservation.cs">
       <SubType>Form</SubType>
@@ -105,14 +105,14 @@
     <EmbeddedResource Include="frmAddTable.resx">
       <DependentUpon>frmAddTable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelRes.resx">
+      <DependentUpon>frmCancelRes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDeleteAccount.resx">
       <DependentUpon>frmDeleteAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDeleteTable.resx">
       <DependentUpon>frmDeleteTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMakeRes.resx">
-      <DependentUpon>frmMakeRes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMakeReservation.resx">
       <DependentUpon>frmMakeReservation.cs</DependentUpon>

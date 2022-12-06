@@ -19,19 +19,24 @@ namespace ResaurantReservationSYS
 
         private void bbtnAvailablility_Click(object sender, EventArgs e)
         {
+  
+
+            if (dtpDate.Value.ToShortDateString() == "25/12/2022")
+            {
+                MessageBox.Show("Restaurant is closed on selected date");
+                dtpDate.Focus();
+                return;
+            }
+
+            else
+                MessageBox.Show("Tables are available!");
+                 grpBoxTable.Visible = true;
+
             listBoxTables.Items.Add("12");
             listBoxTables.Items.Add("19");
             listBoxTables.Items.Add("07");
             listBoxTables.Items.Add("15");
             listBoxTables.Items.Add("22");
-
-            if (dtpDate.Value.ToShortDateString() == "25/12/2021")
-                MessageBox.Show("Restaurant is closed on selected date");
-
-            else
-                MessageBox.Show("Tables are available!");
-
-            grpBoxTable.Visible = true;
 
         }
 
@@ -47,6 +52,7 @@ namespace ResaurantReservationSYS
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+            
 
             if (txtBoxForename.Text.Equals(""))
             {
@@ -66,10 +72,11 @@ namespace ResaurantReservationSYS
                 txtBoxEmail.Focus();
                 return;
             }
-
+           
             else
                 MessageBox.Show("A reservation has been made!");
 
+            
             //Reset UI
             grpBoxGuestInfo.Visible = false;
             grpBoxTable.Visible = false;

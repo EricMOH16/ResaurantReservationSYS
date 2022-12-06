@@ -89,6 +89,7 @@ namespace ResaurantReservationSYS
             // txtBoxTime
             // 
             this.txtBoxTime.Location = new System.Drawing.Point(98, 48);
+            this.txtBoxTime.MaxLength = 5;
             this.txtBoxTime.Name = "txtBoxTime";
             this.txtBoxTime.Size = new System.Drawing.Size(100, 20);
             this.txtBoxTime.TabIndex = 4;
@@ -96,6 +97,7 @@ namespace ResaurantReservationSYS
             // txtBoxSize
             // 
             this.txtBoxSize.Location = new System.Drawing.Point(98, 81);
+            this.txtBoxSize.MaxLength = 5;
             this.txtBoxSize.Name = "txtBoxSize";
             this.txtBoxSize.Size = new System.Drawing.Size(100, 20);
             this.txtBoxSize.TabIndex = 5;
