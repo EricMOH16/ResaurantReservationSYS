@@ -108,6 +108,7 @@ namespace ResaurantReservationSYS
             this.btnRegister.TabIndex = 7;
             this.btnRegister.Text = "Update";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnCancel
             // 
@@ -183,6 +184,7 @@ namespace ResaurantReservationSYS
             this.txtAccountID.Name = "txtAccountID";
             this.txtAccountID.Size = new System.Drawing.Size(100, 20);
             this.txtAccountID.TabIndex = 12;
+            this.txtAccountID.Text = "54462";
             this.txtAccountID.TextChanged += new System.EventHandler(this.txtAccountID_TextChanged);
             // 
             // frmUpdateAccount

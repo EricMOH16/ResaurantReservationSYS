@@ -80,7 +80,7 @@ namespace ResaurantReservationSYS
                 txtEmail.Focus();
                 return;
             }
-
+            else
 
             MessageBox.Show("Customer Registered", "Success", MessageBoxButtons.OK);
 

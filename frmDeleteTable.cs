@@ -21,5 +21,18 @@ namespace ResaurantReservationSYS
         {
 
         }
+
+        private void btnDeleteTable_Click(object sender, EventArgs e)
+        {
+           var choice =  MessageBox.Show("Are you sure you want to delete this table?", "Confrim", MessageBoxButtons.YesNo);
+
+            if (choice == DialogResult.Yes)
+            {
+                MessageBox.Show("Table has been removed from the system");
+                Application.Exit();
+            }
+            else
+                return;
+        }
     }
 }

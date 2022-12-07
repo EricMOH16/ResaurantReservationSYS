@@ -129,6 +129,7 @@ namespace ResaurantReservationSYS
             this.Controls.Add(this.lblAccountId);
             this.Name = "frmDeleteAccount";
             this.Text = "frmDeleteAccount";
+            this.Load += new System.EventHandler(this.frmDeleteAccount_Load);
             this.grpboxReason.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

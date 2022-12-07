@@ -83,5 +83,10 @@ namespace ResaurantReservationSYS
             dtpDate.Value = DateTime.Now;
 
         }
+
+        private void txtBoxForename_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

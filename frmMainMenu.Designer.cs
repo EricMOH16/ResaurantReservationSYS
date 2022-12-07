@@ -48,6 +48,7 @@ namespace ResaurantReservationSYS
             this.yearlyRevenueAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yearlyTableAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.picBoxRestaurantInside = new System.Windows.Forms.PictureBox();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxRestaurantInside)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +59,8 @@ namespace ResaurantReservationSYS
             this.mnuItemCustomers,
             this.mnuItemReservation,
             this.mnuItemTables,
-            this.managementToolStripMenuItem});
+            this.managementToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(708, 24);
@@ -78,22 +80,22 @@ namespace ResaurantReservationSYS
             // registerCustomerToolStripMenuItem
             // 
             this.registerCustomerToolStripMenuItem.Name = "registerCustomerToolStripMenuItem";
-            this.registerCustomerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registerCustomerToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.registerCustomerToolStripMenuItem.Text = "Create Account";
             this.registerCustomerToolStripMenuItem.Click += new System.EventHandler(this.registerCustomerToolStripMenuItem_Click);
             // 
             // updateCustomersToolStripMenuItem
             // 
             this.updateCustomersToolStripMenuItem.Name = "updateCustomersToolStripMenuItem";
-            this.updateCustomersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.updateCustomersToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.updateCustomersToolStripMenuItem.Text = "Update Account";
             this.updateCustomersToolStripMenuItem.Click += new System.EventHandler(this.updateCustomersToolStripMenuItem_Click);
             // 
             // cancelRegistraionToolStripMenuItem
             // 
             this.cancelRegistraionToolStripMenuItem.Name = "cancelRegistraionToolStripMenuItem";
-            this.cancelRegistraionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cancelRegistraionToolStripMenuItem.Text = "Dlete Acccount";
+            this.cancelRegistraionToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.cancelRegistraionToolStripMenuItem.Text = "Delete Acccount";
             this.cancelRegistraionToolStripMenuItem.Click += new System.EventHandler(this.cancelRegistraionToolStripMenuItem_Click);
             // 
             // mnuItemReservation
@@ -110,27 +112,27 @@ namespace ResaurantReservationSYS
             // makeReservationToolStripMenuItem
             // 
             this.makeReservationToolStripMenuItem.Name = "makeReservationToolStripMenuItem";
-            this.makeReservationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.makeReservationToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.makeReservationToolStripMenuItem.Text = "Make Reservation";
             this.makeReservationToolStripMenuItem.Click += new System.EventHandler(this.makeReservationToolStripMenuItem_Click);
             // 
             // cancelReseravtionToolStripMenuItem
             // 
             this.cancelReseravtionToolStripMenuItem.Name = "cancelReseravtionToolStripMenuItem";
-            this.cancelReseravtionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cancelReseravtionToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.cancelReseravtionToolStripMenuItem.Text = "Cancel Reseravtion";
             this.cancelReseravtionToolStripMenuItem.Click += new System.EventHandler(this.cancelReseravtionToolStripMenuItem_Click);
             // 
             // recordArrivalToolStripMenuItem
             // 
             this.recordArrivalToolStripMenuItem.Name = "recordArrivalToolStripMenuItem";
-            this.recordArrivalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.recordArrivalToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.recordArrivalToolStripMenuItem.Text = "Record Arrival";
             // 
             // recordToolStripMenuItem
             // 
             this.recordToolStripMenuItem.Name = "recordToolStripMenuItem";
-            this.recordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.recordToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.recordToolStripMenuItem.Text = "Record Bill Paid";
             // 
             // mnuItemTables
@@ -146,21 +148,21 @@ namespace ResaurantReservationSYS
             // addTableToolStripMenuItem
             // 
             this.addTableToolStripMenuItem.Name = "addTableToolStripMenuItem";
-            this.addTableToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addTableToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.addTableToolStripMenuItem.Text = "Add Table";
             this.addTableToolStripMenuItem.Click += new System.EventHandler(this.addTableToolStripMenuItem_Click);
             // 
             // updateTableToolStripMenuItem
             // 
             this.updateTableToolStripMenuItem.Name = "updateTableToolStripMenuItem";
-            this.updateTableToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.updateTableToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.updateTableToolStripMenuItem.Text = "Update Table";
             this.updateTableToolStripMenuItem.Click += new System.EventHandler(this.updateTableToolStripMenuItem_Click);
             // 
             // removeTableToolStripMenuItem
             // 
             this.removeTableToolStripMenuItem.Name = "removeTableToolStripMenuItem";
-            this.removeTableToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.removeTableToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.removeTableToolStripMenuItem.Text = "Remove Table";
             this.removeTableToolStripMenuItem.Click += new System.EventHandler(this.removeTableToolStripMenuItem_Click);
             // 
@@ -193,6 +195,13 @@ namespace ResaurantReservationSYS
             this.picBoxRestaurantInside.Size = new System.Drawing.Size(708, 400);
             this.picBoxRestaurantInside.TabIndex = 1;
             this.picBoxRestaurantInside.TabStop = false;
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // frmMainMenu
             // 
@@ -232,6 +241,7 @@ namespace ResaurantReservationSYS
         private System.Windows.Forms.ToolStripMenuItem yearlyRevenueAnalysisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yearlyTableAnalysisToolStripMenuItem;
         private System.Windows.Forms.PictureBox picBoxRestaurantInside;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 

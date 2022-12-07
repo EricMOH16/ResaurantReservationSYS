@@ -33,9 +33,9 @@ namespace ResaurantReservationSYS
             this.lblUpdateTable = new System.Windows.Forms.Label();
             this.lblLocation = new System.Windows.Forms.Label();
             this.btnAddRoom = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtBoxNumber = new System.Windows.Forms.TextBox();
+            this.txtBoxSeats = new System.Windows.Forms.TextBox();
+            this.txtBoxLocation = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -75,27 +75,29 @@ namespace ResaurantReservationSYS
             this.btnAddRoom.TabIndex = 3;
             this.btnAddRoom.Text = "Add Table";
             this.btnAddRoom.UseVisualStyleBackColor = true;
+            this.btnAddRoom.Click += new System.EventHandler(this.btnAddRoom_Click);
             // 
-            // textBox1
+            // txtBoxNumber
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtBoxNumber.Location = new System.Drawing.Point(132, 46);
+            this.txtBoxNumber.Name = "txtBoxNumber";
+            this.txtBoxNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxNumber.TabIndex = 4;
+            this.txtBoxNumber.TextChanged += new System.EventHandler(this.txtBoxNumber_TextChanged);
             // 
-            // textBox2
+            // txtBoxSeats
             // 
-            this.textBox2.Location = new System.Drawing.Point(132, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtBoxSeats.Location = new System.Drawing.Point(132, 82);
+            this.txtBoxSeats.Name = "txtBoxSeats";
+            this.txtBoxSeats.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxSeats.TabIndex = 5;
             // 
-            // textBox3
+            // txtBoxLocation
             // 
-            this.textBox3.Location = new System.Drawing.Point(132, 118);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtBoxLocation.Location = new System.Drawing.Point(132, 118);
+            this.txtBoxLocation.Name = "txtBoxLocation";
+            this.txtBoxLocation.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxLocation.TabIndex = 6;
             // 
             // btnCancel
             // 
@@ -105,6 +107,7 @@ namespace ResaurantReservationSYS
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmAddTable
             // 
@@ -112,9 +115,9 @@ namespace ResaurantReservationSYS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(291, 235);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxLocation);
+            this.Controls.Add(this.txtBoxSeats);
+            this.Controls.Add(this.txtBoxNumber);
             this.Controls.Add(this.btnAddRoom);
             this.Controls.Add(this.lblLocation);
             this.Controls.Add(this.lblUpdateTable);
@@ -132,9 +135,9 @@ namespace ResaurantReservationSYS
         private System.Windows.Forms.Label lblUpdateTable;
         private System.Windows.Forms.Label lblLocation;
         private System.Windows.Forms.Button btnAddRoom;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtBoxNumber;
+        private System.Windows.Forms.TextBox txtBoxSeats;
+        private System.Windows.Forms.TextBox txtBoxLocation;
         private System.Windows.Forms.Button btnCancel;
     }
 }

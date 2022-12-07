@@ -106,6 +106,7 @@ namespace ResaurantReservationSYS
             this.btnCancel.TabIndex = 15;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmUpdateTable
             // 
@@ -122,6 +123,7 @@ namespace ResaurantReservationSYS
             this.Controls.Add(this.lblTableNumber);
             this.Name = "frmUpdateTable";
             this.Text = "frmUpdateTable";
+            this.Load += new System.EventHandler(this.frmUpdateTable_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

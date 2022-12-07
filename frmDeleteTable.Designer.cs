@@ -49,7 +49,12 @@ namespace ResaurantReservationSYS
             // 
             // cboBoxNumber
             // 
+            this.cboBoxNumber.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBoxNumber.FormattingEnabled = true;
+            this.cboBoxNumber.Items.AddRange(new object[] {
+            "15",
+            "33",
+            "05"});
             this.cboBoxNumber.Location = new System.Drawing.Point(122, 31);
             this.cboBoxNumber.Name = "cboBoxNumber";
             this.cboBoxNumber.Size = new System.Drawing.Size(100, 21);
@@ -64,6 +69,7 @@ namespace ResaurantReservationSYS
             this.btnDeleteTable.TabIndex = 19;
             this.btnDeleteTable.Text = "Delete Table";
             this.btnDeleteTable.UseVisualStyleBackColor = true;
+            this.btnDeleteTable.Click += new System.EventHandler(this.btnDeleteTable_Click);
             // 
             // lblTableNumber
             // 

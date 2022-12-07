@@ -188,6 +188,7 @@ namespace ResaurantReservationSYS
             this.txtBoxForename.Name = "txtBoxForename";
             this.txtBoxForename.Size = new System.Drawing.Size(139, 20);
             this.txtBoxForename.TabIndex = 5;
+            this.txtBoxForename.TextChanged += new System.EventHandler(this.txtBoxForename_TextChanged);
             // 
             // btnConfirm
             // 

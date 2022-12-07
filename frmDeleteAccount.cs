@@ -20,6 +20,7 @@ namespace ResaurantReservationSYS
         private void btnCancel_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Cancellation Successful", "Cancellation", MessageBoxButtons.OK);
+            
         }
 
         private void txtAccountID_TextChanged(object sender, EventArgs e)
@@ -32,6 +33,11 @@ namespace ResaurantReservationSYS
         }
 
         private void rea(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmDeleteAccount_Load(object sender, EventArgs e)
         {
 
         }
