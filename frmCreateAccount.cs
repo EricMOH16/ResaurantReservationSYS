@@ -4,10 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace ResaurantReservationSYS
 {
     public partial class frmCreateAccount : Form
@@ -31,10 +30,25 @@ namespace ResaurantReservationSYS
         {
             Application.Exit();
         }
+        public bool isNumeric(string value)
+        {
+            return value.All(char.IsNumber);
+        }
+        
+        public bool isEmail(string value)
+        {
+            string regex = @"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$"; // learned to use regex from mailtrap.io
+
+            return Regex.IsMatch(value, regex, RegexOptions.IgnoreCase);
+        }
+
+       
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
             //Validation
+
+
             if (txtFirstName.Text.Equals("") && txtPhoneNumber.Text.Equals("") && txtSurname.Text.Equals("") && txtEmail.Text.Equals(""))
             {
                 MessageBox.Show("All fields must be entered", "Invalid Input", MessageBoxButtons.OK);
@@ -42,27 +56,27 @@ namespace ResaurantReservationSYS
                 return;
             }
 
-            if (txtFirstName.Text.Equals(""))
+            if (txtFirstName.Text.Equals("") || isNumeric(txtFirstName.Text))
             {
-                MessageBox.Show("First Name must be entered", "Invalid Input", MessageBoxButtons.OK);
+                MessageBox.Show("Invalid first name", "Invalid Input", MessageBoxButtons.OK);
                 txtFirstName.Focus();
                 return;
             }
-            if (txtSurname.Text.Equals(""))
+            if (txtSurname.Text.Equals("") || isNumeric(txtSurname.Text))
             {
-                MessageBox.Show("Surname must be entered", "Invalid Input", MessageBoxButtons.OK);
+                MessageBox.Show("Invalid Surname", "Invalid Input", MessageBoxButtons.OK);
                 txtSurname.Focus();
                 return;
             }
             if (txtPhoneNumber.Text.Equals(""))
             {
-                MessageBox.Show("Phone number must be entered", "Invalid Input", MessageBoxButtons.OK);
+                MessageBox.Show("Invalid Phone Number", "Invalid Input", MessageBoxButtons.OK);
                 txtPhoneNumber.Focus();
                 return;
             }
-            if (txtEmail.Text.Equals(""))
+            if (txtEmail.Text.Equals("") || !isEmail(txtEmail.Text))
             {
-                MessageBox.Show("Email must be entered", "Invalid Input", MessageBoxButtons.OK);
+                MessageBox.Show("Invalid Email", "Invalid Input", MessageBoxButtons.OK);
                 txtEmail.Focus();
                 return;
             }
@@ -75,6 +89,7 @@ namespace ResaurantReservationSYS
             txtSurname.Clear();
             txtPhoneNumber.Clear();
             txtEmail.Clear();
+            txtPassword.Clear();
 
         }
 

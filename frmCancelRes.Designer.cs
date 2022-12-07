@@ -32,7 +32,7 @@ namespace ResaurantReservationSYS
             this.lblResId = new System.Windows.Forms.Label();
             this.lblReasons = new System.Windows.Forms.Label();
             this.cboBoxReason = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxResId = new System.Windows.Forms.TextBox();
             this.grpBoxReason = new System.Windows.Forms.GroupBox();
             this.txtBoxReason = new System.Windows.Forms.RichTextBox();
             this.btnNewRes = new System.Windows.Forms.Button();
@@ -61,19 +61,25 @@ namespace ResaurantReservationSYS
             // 
             // cboBoxReason
             // 
+            this.cboBoxReason.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBoxReason.FormattingEnabled = true;
+            this.cboBoxReason.Items.AddRange(new object[] {
+            "Advice from others",
+            "Poor past experience",
+            "Bad online review"});
             this.cboBoxReason.Location = new System.Drawing.Point(132, 61);
             this.cboBoxReason.Name = "cboBoxReason";
             this.cboBoxReason.Size = new System.Drawing.Size(193, 21);
             this.cboBoxReason.TabIndex = 2;
             this.cboBoxReason.SelectedIndexChanged += new System.EventHandler(this.cboBoxReason_SelectedIndexChanged);
             // 
-            // textBox1
+            // txtBoxResId
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(109, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtBoxResId.Location = new System.Drawing.Point(132, 30);
+            this.txtBoxResId.Name = "txtBoxResId";
+            this.txtBoxResId.Size = new System.Drawing.Size(109, 20);
+            this.txtBoxResId.TabIndex = 3;
+            this.txtBoxResId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // grpBoxReason
             // 
@@ -112,6 +118,7 @@ namespace ResaurantReservationSYS
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnConfrim
             // 
@@ -132,7 +139,7 @@ namespace ResaurantReservationSYS
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnNewRes);
             this.Controls.Add(this.grpBoxReason);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxResId);
             this.Controls.Add(this.cboBoxReason);
             this.Controls.Add(this.lblReasons);
             this.Controls.Add(this.lblResId);
@@ -149,7 +156,7 @@ namespace ResaurantReservationSYS
         private System.Windows.Forms.Label lblResId;
         private System.Windows.Forms.Label lblReasons;
         private System.Windows.Forms.ComboBox cboBoxReason;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxResId;
         private System.Windows.Forms.GroupBox grpBoxReason;
         private System.Windows.Forms.RichTextBox txtBoxReason;
         private System.Windows.Forms.Button btnNewRes;
