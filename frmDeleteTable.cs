@@ -34,5 +34,12 @@ namespace ResaurantReservationSYS
             else
                 return;
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            frmMainMenu mainMenu = new frmMainMenu();
+            this.Hide();
+            mainMenu.Show();
+        }
     }
 }

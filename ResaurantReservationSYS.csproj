@@ -76,6 +76,30 @@
     <Compile Include="frmMakeReservation.Designer.cs">
       <DependentUpon>frmMakeReservation.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRecordArrival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecordArrival.Designer.cs">
+      <DependentUpon>frmRecordArrival.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecordBillPayed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecordBillPayed.Designer.cs">
+      <DependentUpon>frmRecordBillPayed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRevenueAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRevenueAnalysis.Designer.cs">
+      <DependentUpon>frmRevenueAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableAnalysis.Designer.cs">
+      <DependentUpon>frmTableAnalysis.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUpdateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +140,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMakeReservation.resx">
       <DependentUpon>frmMakeReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecordArrival.resx">
+      <DependentUpon>frmRecordArrival.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecordBillPayed.resx">
+      <DependentUpon>frmRecordBillPayed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRevenueAnalysis.resx">
+      <DependentUpon>frmRevenueAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableAnalysis.resx">
+      <DependentUpon>frmTableAnalysis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateAccount.resx">
       <DependentUpon>frmUpdateAccount.cs</DependentUpon>

@@ -28,7 +28,9 @@ namespace ResaurantReservationSYS
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            frmMainMenu mainMenu = new frmMainMenu();
+            this.Hide();
+            mainMenu.Show();
         }
         public bool isNumeric(string value)
         {

@@ -47,8 +47,8 @@ namespace ResaurantReservationSYS
             this.managementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yearlyRevenueAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yearlyTableAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.picBoxRestaurantInside = new System.Windows.Forms.PictureBox();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.picBoxRestaurantInside = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxRestaurantInside)).BeginInit();
             this.SuspendLayout();
@@ -128,12 +128,14 @@ namespace ResaurantReservationSYS
             this.recordArrivalToolStripMenuItem.Name = "recordArrivalToolStripMenuItem";
             this.recordArrivalToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.recordArrivalToolStripMenuItem.Text = "Record Arrival";
+            this.recordArrivalToolStripMenuItem.Click += new System.EventHandler(this.recordArrivalToolStripMenuItem_Click);
             // 
             // recordToolStripMenuItem
             // 
             this.recordToolStripMenuItem.Name = "recordToolStripMenuItem";
             this.recordToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.recordToolStripMenuItem.Text = "Record Bill Paid";
+            this.recordToolStripMenuItem.Click += new System.EventHandler(this.recordToolStripMenuItem_Click);
             // 
             // mnuItemTables
             // 
@@ -180,21 +182,14 @@ namespace ResaurantReservationSYS
             this.yearlyRevenueAnalysisToolStripMenuItem.Name = "yearlyRevenueAnalysisToolStripMenuItem";
             this.yearlyRevenueAnalysisToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.yearlyRevenueAnalysisToolStripMenuItem.Text = "Yearly Revenue Analysis";
+            this.yearlyRevenueAnalysisToolStripMenuItem.Click += new System.EventHandler(this.yearlyRevenueAnalysisToolStripMenuItem_Click);
             // 
             // yearlyTableAnalysisToolStripMenuItem
             // 
             this.yearlyTableAnalysisToolStripMenuItem.Name = "yearlyTableAnalysisToolStripMenuItem";
             this.yearlyTableAnalysisToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.yearlyTableAnalysisToolStripMenuItem.Text = "Yearly Table Analysis";
-            // 
-            // picBoxRestaurantInside
-            // 
-            this.picBoxRestaurantInside.Image = ((System.Drawing.Image)(resources.GetObject("picBoxRestaurantInside.Image")));
-            this.picBoxRestaurantInside.Location = new System.Drawing.Point(0, 27);
-            this.picBoxRestaurantInside.Name = "picBoxRestaurantInside";
-            this.picBoxRestaurantInside.Size = new System.Drawing.Size(708, 400);
-            this.picBoxRestaurantInside.TabIndex = 1;
-            this.picBoxRestaurantInside.TabStop = false;
+            this.yearlyTableAnalysisToolStripMenuItem.Click += new System.EventHandler(this.yearlyTableAnalysisToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -202,6 +197,16 @@ namespace ResaurantReservationSYS
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // picBoxRestaurantInside
+            // 
+            this.picBoxRestaurantInside.Image = ((System.Drawing.Image)(resources.GetObject("picBoxRestaurantInside.Image")));
+            this.picBoxRestaurantInside.Location = new System.Drawing.Point(42, 46);
+            this.picBoxRestaurantInside.Name = "picBoxRestaurantInside";
+            this.picBoxRestaurantInside.Size = new System.Drawing.Size(627, 346);
+            this.picBoxRestaurantInside.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxRestaurantInside.TabIndex = 1;
+            this.picBoxRestaurantInside.TabStop = false;
             // 
             // frmMainMenu
             // 

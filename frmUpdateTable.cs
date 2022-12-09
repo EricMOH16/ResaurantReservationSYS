@@ -22,14 +22,7 @@ namespace ResaurantReservationSYS
         }
         private void btnAddRoom_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Table has been updated", "Success", MessageBoxButtons.OK);
-            
-            
-        }
-
-        private void frmUpdateTable_Load(object sender, EventArgs e)
-        {
-            if ( txtBoxSeats.Text.Equals("") && txtBoxLocation.Text.Equals(""))
+            if (txtBoxSeats.Text.Equals("") && txtBoxLocation.Text.Equals(""))
             {
                 MessageBox.Show("All fields must be entered", "Invalid Input", MessageBoxButtons.OK);
                 txtBoxSeats.Focus();
@@ -47,6 +40,13 @@ namespace ResaurantReservationSYS
             else
                 MessageBox.Show("Tabbel information has been updated");
 
+
+
+        }
+
+        private void frmUpdateTable_Load(object sender, EventArgs e)
+        {
+           
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -57,4 +57,4 @@ namespace ResaurantReservationSYS
         }
     }
     }
-}
+

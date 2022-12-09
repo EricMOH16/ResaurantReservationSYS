@@ -85,5 +85,12 @@ namespace ResaurantReservationSYS
             txtEmail.Clear();
             txtPassword.Clear();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            frmMainMenu mainMenu = new frmMainMenu();
+            this.Hide();
+            mainMenu.Show();
+        }
     }
 }

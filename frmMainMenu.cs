@@ -83,5 +83,33 @@ namespace ResaurantReservationSYS
             Application.Exit();
                
         }
+
+        private void recordArrivalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRecordArrival recordArrival = new frmRecordArrival();
+            this.Hide();
+            recordArrival.Show();
+        }
+
+        private void recordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRecordBillPayed recordBillPayed = new frmRecordBillPayed();
+            this.Hide();
+            recordBillPayed.Show();
+        }
+
+        private void yearlyRevenueAnalysisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRevenueAnalysis revenueAnalysis = new frmRevenueAnalysis();
+            this.Hide();
+            revenueAnalysis.Show();
+        }
+
+        private void yearlyTableAnalysisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTableAnalysis tableAnalysis = new frmTableAnalysis();
+            this.Hide();
+            tableAnalysis.Show();
+        }
     }
 }

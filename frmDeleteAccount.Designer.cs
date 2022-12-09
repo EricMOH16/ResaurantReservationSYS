@@ -29,26 +29,16 @@ namespace ResaurantReservationSYS
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtAccountID = new System.Windows.Forms.TextBox();
             this.lblAccountId = new System.Windows.Forms.Label();
             this.cboBoxDeleteReason = new System.Windows.Forms.ComboBox();
             this.labelReason = new System.Windows.Forms.Label();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnDeleteAccount = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.grpboxReason = new System.Windows.Forms.GroupBox();
             this.txtBoxDeleteInfo = new System.Windows.Forms.RichTextBox();
+            this.txtAccountID = new System.Windows.Forms.TextBox();
             this.grpboxReason.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtAccountID
-            // 
-            this.txtAccountID.Enabled = false;
-            this.txtAccountID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(101)))));
-            this.txtAccountID.Location = new System.Drawing.Point(163, 8);
-            this.txtAccountID.Name = "txtAccountID";
-            this.txtAccountID.Size = new System.Drawing.Size(100, 20);
-            this.txtAccountID.TabIndex = 14;
-            this.txtAccountID.TextChanged += new System.EventHandler(this.txtAccountID_TextChanged);
             // 
             // lblAccountId
             // 
@@ -78,14 +68,15 @@ namespace ResaurantReservationSYS
             this.labelReason.TabIndex = 16;
             this.labelReason.Text = "Why are you deleting your account?";
             // 
-            // btnRegister
+            // btnDeleteAccount
             // 
-            this.btnRegister.Location = new System.Drawing.Point(189, 255);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(75, 23);
-            this.btnRegister.TabIndex = 20;
-            this.btnRegister.Text = "Update";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnDeleteAccount.Location = new System.Drawing.Point(189, 255);
+            this.btnDeleteAccount.Name = "btnDeleteAccount";
+            this.btnDeleteAccount.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteAccount.TabIndex = 20;
+            this.btnDeleteAccount.Text = "Delete";
+            this.btnDeleteAccount.UseVisualStyleBackColor = true;
+            this.btnDeleteAccount.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnCancel
             // 
@@ -115,17 +106,24 @@ namespace ResaurantReservationSYS
             this.txtBoxDeleteInfo.TabIndex = 22;
             this.txtBoxDeleteInfo.Text = "";
             // 
+            // txtAccountID
+            // 
+            this.txtAccountID.Location = new System.Drawing.Point(163, 8);
+            this.txtAccountID.Name = "txtAccountID";
+            this.txtAccountID.Size = new System.Drawing.Size(100, 20);
+            this.txtAccountID.TabIndex = 22;
+            // 
             // frmDeleteAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(379, 320);
+            this.Controls.Add(this.txtAccountID);
             this.Controls.Add(this.grpboxReason);
-            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnDeleteAccount);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.labelReason);
             this.Controls.Add(this.cboBoxDeleteReason);
-            this.Controls.Add(this.txtAccountID);
             this.Controls.Add(this.lblAccountId);
             this.Name = "frmDeleteAccount";
             this.Text = "frmDeleteAccount";
@@ -137,14 +135,13 @@ namespace ResaurantReservationSYS
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtAccountID;
         private System.Windows.Forms.Label lblAccountId;
         private System.Windows.Forms.ComboBox cboBoxDeleteReason;
         private System.Windows.Forms.Label labelReason;
-        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnDeleteAccount;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.GroupBox grpboxReason;
         private System.Windows.Forms.RichTextBox txtBoxDeleteInfo;
+        private System.Windows.Forms.TextBox txtAccountID;
     }
 }

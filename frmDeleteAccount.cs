@@ -16,11 +16,17 @@ namespace ResaurantReservationSYS
         {
             InitializeComponent();
         }
+        public bool isNumeric(string value)
+        {
+            return value.All(char.IsNumber);
+        }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Cancellation Successful", "Cancellation", MessageBoxButtons.OK);
-            
+            frmMainMenu mainMenu = new frmMainMenu();
+            this.Hide();
+            mainMenu.Show();
+
         }
 
         private void txtAccountID_TextChanged(object sender, EventArgs e)
@@ -40,6 +46,29 @@ namespace ResaurantReservationSYS
         private void frmDeleteAccount_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            if (txtAccountID.Text.Equals(""))
+            {
+                MessageBox.Show("You must enter your account id");
+                txtAccountID.Focus();
+                return;
+            }
+             
+            
+           
+        
+            if (!isNumeric(txtAccountID.Text))
+            {
+                MessageBox.Show("Account Id must be numeric");
+                txtAccountID.Focus();
+                return;
+            }
+            else
+                MessageBox.Show("Account has been deleted\n\nYou can no longer make online Reservations");
+            txtAccountID.Clear();
         }
     }
 }
